@@ -59,3 +59,18 @@ button{
   font-weight: lighter;
   margin-bottom: 20px;
 }
+.index-input,
+.index-input2{
+  border: 1px solid #924DBF;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: all .25s ease-in-out;
+  width: 70%;
+}
+.index-input:focus{
+  box-shadow: -5px 5px 0px .1px #B399D4;
+  outline: none;
+  transform: translate(3px, -3px);
+}
