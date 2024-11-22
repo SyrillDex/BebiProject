@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/quiz.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <h1>Quiz time!📝</h1>
+    <div class="question-container">
+      <div class="question1">
+        <h3>Kailan tayo pumuntang Enchanted Kingdom?</h3>
+        <button id="wrong">December 18, 2021</button>
+        <button id="wrong">December 28, 2021</button>
+        <button id="correct" onclick="isCorrect(question2, question1);">
+          December 28, 2020
+        </button>
+        <button id="wrong">December 08, 2020</button>
+      </div>
+      <div class="question2">
+        <h3>San tayo naging mag ka work?</h3>
+        <button id="wrong">Kitchen</button>
+        <button id="correct" onclick="isCorrect(question3, question2);">
+          Aunties Kitchen
+        </button>
+        <button id="wrong">McDonalds</button>
+        <button id="wrong">Di tayo naging magka-work</button>
+      </div>
+      <div class="question3">
+        <h3>Anong dahilan kung bakit ka galit?</h3>
+        <button id="wrong">Gutom</button>
+        <button id="wrong">Nag away tayo</button>
+        <button id="wrong">May nangyaring di sang ayon sa gusto mo</button>
+        <button id="correct" onclick="isCorrect(lastSlide, question3);">
+          All of the above
+        </button>
+      </div>
+      <div class="last-slide">
+        <h3>Up Next</h3>
+        <p>"Where to go?"</p>
+        <button class="continue">Continue >>></button>
+      </div>
+    </div>
+    <div class="prompt">
+      <h2>Perfect ka💅🏼</h2>
+      <p>Next question in...</p>
+      <p class="counter"></p>
+    </div>
+    <script src="js/quiz.js"></script>
+  </body>
+</html>
